@@ -4,16 +4,15 @@ This project demonstrates end-to-end development of a domain-adapted generative 
 
 It’s designed to showcase practical Generative AI skills relevant to industry roles: model evaluation, LLM fine-tuning, dataset preparation, PEFT techniques, and comparative analysis.
 
----
 
 ## **Project Highlights**
 
-### ** LLM Evaluation**
+### **LLM Evaluation**
 
 * Baseline GPT-2 behaviour analysed using perplexity, tokenisation patterns, and qualitative outputs.
 * Explored BPE tokenisation to understand subword representation for archaic English text.
 
-### ** Full Fine-Tuning**
+### **Full Fine-Tuning**
 
 * Two experimental setups:
 
@@ -22,7 +21,7 @@ It’s designed to showcase practical Generative AI skills relevant to industry 
 * Achieved measurable improvements in stylistic coherence and perplexity.
 * Trained all **124M parameters**, demonstrating ability to perform full-scale adaptation.
 
-### ** Parameter-Efficient Fine-Tuning (LoRA)**
+### **Parameter-Efficient Fine-Tuning (LoRA)**
 
 * Applied LoRA adapters to GPT-2 attention and feed-forward layers.
 * Only **2.36M trainable parameters** (under 2% of the model).
@@ -37,7 +36,6 @@ It’s designed to showcase practical Generative AI skills relevant to industry 
 | **Full FT (21 samples)** | 124M             | ~30.7          | Best performance              |
 | **LoRA (21 samples)**    | 2.36M            | ~37.1          | Most efficient, lower compute |
 
----
 
 ## **Technical Stack**
 
@@ -48,7 +46,6 @@ It’s designed to showcase practical Generative AI skills relevant to industry 
 * **Matplotlib / WordCloud**
 * Google Colab for GPU-backed training
 
----
 
 ## **Repository Structure**
 
@@ -77,13 +74,13 @@ This work examines how GPT-2 adapts to stylistically distinctive text through th
 * Produces fluent text but diverges from Austen’s tone.
 * Higher perplexity indicates poor domain familiarity.
 
-### ** 2 Full Fine-Tuning**
+### **2 Full Fine-Tuning**
 
 * Strongest results in coherence, narrative flow, and stylistic accuracy.
 * Larger dataset (21 samples) yields notably improved outputs.
 * Cost: long training cycles and full parameter updates.
 
-### ** 3 LoRA Fine-Tuning**
+### **3 LoRA Fine-Tuning**
 
 * Efficient, lightweight training with minimal parameter updates.
 * Maintains stylistic formality and structure.
